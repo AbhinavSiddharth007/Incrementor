@@ -49,6 +49,3 @@ describe("Counter", () => {
     expect(screen.getByTestId("count-value")).toHaveTextContent("0");
   });
 });
-test("intentional fail", () => {
-  expect(1 + 1).toBe(3);
-});
