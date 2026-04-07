@@ -24,7 +24,7 @@ test("counter interactions work across the home and login pages", async ({
   await page.getByTestId("clear-btn").click();
   await expect(countValue).toHaveText("0");
 
-  await page.goto("/login/login_page");
+  await page.goto("/login");
 
   await expect(
     page.getByRole("heading", { name: /login button press counter/i }),
